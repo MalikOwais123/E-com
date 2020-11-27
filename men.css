@@ -243,7 +243,7 @@ html {
 
 .collections-product .top {
   grid-area: top;
-  background-color: brown;
+  /* background-color: brown; */
   /* font-family: var(--link-font);
     font-weight: 600;
     font-size: 38px;
@@ -833,6 +833,20 @@ html {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
   }
+
+  .trusted-partners .brands {
+    margin-top: 2rem;
+    grid-area: brands;
+    /* background: blue; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  .trusted-partners .brands .brand {
+    background-size: 60% 70%, contain;
+    background-repeat: no-repeat;
+    margin-left: 12rem;
+  }
   
 }
 
@@ -840,6 +854,11 @@ html {
   .container {
     display: grid;
     grid-template-rows: 30vh 10vh 340vh 1000vh 120vh 90vh 10vh;
+  }
+  .trusted-partners .brands .brand {
+    background-size: 50% 50%, contain;
+    background-repeat: no-repeat;
+    margin-left: 12rem;
   }
 }
 
