@@ -9,6 +9,8 @@ html {
   font-size: 62.5%;
 }
 
+/* ----------------- SOME VARIABLES FOR CSS --------------------- */
+
 :root {
   --para-font: "Open Sans", sans-serif;
   --link-font: "Montserrat", sans-serif;
@@ -28,7 +30,7 @@ html {
   align-items: center;
 }
 
-/* Container */
+/* ------------------Container----------------- */
 
 .container {
   display: grid;
@@ -36,7 +38,6 @@ html {
 }
 
 .menu-section {
-  /* background-color: violet; */
   display: grid;
   grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 1100px) minmax(
       1rem,
@@ -48,10 +49,8 @@ html {
     ". items . ";
 }
 
-
 .menu-section .heading {
   grid-area: heading;
-  /* background-color: tomato; */
   display: grid;
   grid-template-columns: 2fr 6fr 2fr;
   grid-template-areas: "title . search";
@@ -59,7 +58,6 @@ html {
 
 .menu-section .heading .title {
   grid-area: title;
-  /* background: yellow; */
   font-family: var(--link-font);
   font-size: 3rem;
   padding-right: 1.5rem;
@@ -112,23 +110,41 @@ html {
 }
 .menu-section .items .home {
   grid-area: home;
+  cursor: pointer;
   /* background-color: yellow; */
+}
+.menu-section .items .home:hover {
+  color: rgb(136, 200, 188);
 }
 .menu-section .items .men {
   grid-area: men;
+  cursor: pointer;
   /* background-color: rgb(228, 102, 19); */
+  color: rgb(136, 200, 188);
 }
 .menu-section .items .women {
   grid-area: women;
+  cursor: pointer;
   /* background-color: yellow; */
+}
+.menu-section .items .women:hover {
+  color: rgb(136, 200, 188);
 }
 .menu-section .items .about {
   grid-area: about;
+  cursor: pointer;
   /* background-color: rgb(151, 109, 90); */
 }
+.menu-section .items .about:hover {
+  color: rgb(136, 200, 188);
+}
 .menu-section .items .contact {
+  cursor: pointer;
   grid-area: contact;
   /* background-color: yellow; */
+}
+.menu-section .items .contact:hover {
+  color: rgb(136, 200, 188);
 }
 .menu-section .items .space {
   /* grid-area: ; */
@@ -272,7 +288,6 @@ html {
 }
 .collections-product .top .options a:hover {
   color: black;
-
 }
 .collections-product .top .options a:link {
   text-decoration: none;
@@ -688,7 +703,6 @@ html {
     position: relative;
     right: 5.5rem;
   }
-
 }
 @media only screen and (max-width: 836px) {
   .footer .footer-wrapper .item1 {
@@ -725,15 +739,12 @@ html {
     display: none;
   }
 
-  .menu-section .items .main-option{
+  .menu-section .items .main-option {
     /* display: none; */
     /* margin-right: 4rem; */
     font-size: 1rem;
   }
 }
-
-
-
 
 @media only screen and (max-width: 660px) {
   .footer .footer-wrapper .item1 {
@@ -756,12 +767,7 @@ html {
   .menu-section .items .cart .value {
     display: none;
   }
-
-  
 }
-
-
-
 
 @media only screen and (max-width: 630px) {
   .footer .footer-wrapper .item1 {
@@ -784,15 +790,11 @@ html {
   }
 }
 
-
-
-
-
 @media only screen and (max-width: 429px) {
   .footer .footer-wrapper .item1 {
     padding-top: 8rem;
   }
-  
+
   .container {
     display: grid;
     grid-template-rows: 30vh 10vh 340vh 1000vh 90vh 90vh 10vh;
@@ -864,7 +866,6 @@ html {
     background-repeat: no-repeat;
     margin-left: 12rem;
   }
-  
 }
 
 @media only screen and (max-width: 366px) {

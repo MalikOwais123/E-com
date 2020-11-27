@@ -3,26 +3,15 @@ var toTop = document.querySelector(".to-top");
 var icon = document.querySelector(".nav-bar");
 var image1 = "./Shoes/shoe2.jpg";
 var image2 = "./Shoes/shoe3.jpg";
-// var image3 = "./images/shoeImages/shoe4.jpg";
 var image3 = "./Shoes/shoe7.jpg";
-
 var slideShow = 0;
 var imageHandler = [image1, image2, image3];
-
-var prevBtn = document.querySelector("#prevBtn");
-var nextBtn = document.querySelector("#nextBtn");
 var slider = document.querySelector(".slider");
-
 var div1 = document.querySelector(".div1");
 var div2 = document.querySelector(".div2");
 var div3 = document.querySelector(".div3");
-console.log(div1);
 
-
-
-// *****************************************************************
-
-
+// ********************************************************************************************
 (function () {
   // var slideShow = 0;
   setInterval(function () {
@@ -37,7 +26,7 @@ console.log(div1);
                             <h2>COLLECTION</h2>
                             <h4>New trending shoes</h4>
                             <div class="slider-btn flex">SHOP COLLECTION</div>
-                          </div>`
+                          </div>`;
     } else if (slideShow === 0) {
       slideShow++;
       slider.style.backgroundImage = `url('${imageHandler[slideShow]}')`;
@@ -47,7 +36,7 @@ console.log(div1);
                             <h2>COLLECTION</h2>
                             <h4>New trending shoes</h4>
                             <div class="slider-btn flex">SHOP COLLECTION</div>
-                          </div>`
+                          </div>`;
       // div1 show here
     } else if (slideShow === 1) {
       // div2 show here
@@ -59,12 +48,13 @@ console.log(div1);
                             <h2>COLLECTION</h2>
                             <h4>New trending shoes</h4>
                             <div class="slider-btn flex">SHOP COLLECTION</div>
-                          </div>`
+                          </div>`;
     }
   }, 5000);
 })();
+// ********************************************************************************************
 
-// --------------------
+// ********************************************************************************************
 
 changeBgColor.addEventListener("mouseover", () => {
   changeBgColor.style.backgroundColor = "black";
@@ -73,8 +63,9 @@ changeBgColor.addEventListener("mouseover", () => {
 changeBgColor.addEventListener("mouseout", () => {
   changeBgColor.style.backgroundColor = "#616161";
 });
+// ********************************************************************************************
 
-// go to top button
+// ****************************************** GO-TO TOP **************************************************
 toTop.addEventListener("mouseover", () => {
   toTop.style.backgroundColor = "black";
   toTop.style.transform = "translateY(-8px )";
@@ -88,5 +79,4 @@ toTop.addEventListener("mouseout", () => {
 toTop.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
-
-// icon
+// ********************************************************************************************

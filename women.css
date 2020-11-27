@@ -109,25 +109,45 @@ html {
   font-size: 1.4rem;
   letter-spacing: 1.5px;
 }
+
 .menu-section .items .home {
   grid-area: home;
-  /* background-color: yellow; */
+  cursor: pointer;
 }
+
+.menu-section .items .home:hover {
+  color: rgb(136, 200, 188);
+}
+
 .menu-section .items .men {
   grid-area: men;
+  cursor: pointer;
   /* background-color: rgb(228, 102, 19); */
+}
+.menu-section .items .men:hover {
+  color: rgb(136, 200, 188);
 }
 .menu-section .items .women {
   grid-area: women;
+  color:  rgb(136, 200, 188);
+  /* cursor: pointer; */
   /* background-color: yellow; */
 }
 .menu-section .items .about {
   grid-area: about;
+  cursor: pointer;
   /* background-color: rgb(151, 109, 90); */
+}
+.menu-section .items .about:hover {
+  color: rgb(136, 200, 188);
 }
 .menu-section .items .contact {
   grid-area: contact;
+  cursor: pointer;
   /* background-color: yellow; */
+}
+.menu-section .items .contact:hover {
+  color: rgb(136, 200, 188);
 }
 .menu-section .items .space {
   /* grid-area: ; */
