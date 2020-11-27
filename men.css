@@ -792,10 +792,27 @@ html {
   .footer .footer-wrapper .item1 {
     padding-top: 8rem;
   }
+  
+  .container {
+    display: grid;
+    grid-template-rows: 30vh 10vh 340vh 1000vh 90vh 90vh 10vh;
+  }
+  .best-sellers .showcase {
+    margin-top: 8rem;
+    grid-area: showcase;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+  }
+  .best-sellers .showcase .item {
+    display: grid;
+    grid-template-rows: 65fr 35fr;
+  }
   .collections-product .product-image {
     grid-area: product-image;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
   }
@@ -826,13 +843,13 @@ html {
     display: grid;
     grid-template-rows: 65fr 35fr;
   }
-  .collections-product .product-image {
+  /* .collections-product .product-image {
     grid-area: product-image;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
-  }
+  } */
 
   .trusted-partners .brands {
     margin-top: 2rem;
