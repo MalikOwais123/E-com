@@ -9,8 +9,6 @@ html {
   font-size: 62.5%;
 }
 
-/* ----------------- SOME VARIABLES FOR CSS --------------------- */
-
 :root {
   --para-font: "Open Sans", sans-serif;
   --link-font: "Montserrat", sans-serif;
@@ -30,14 +28,15 @@ html {
   align-items: center;
 }
 
-/* ------------------Container----------------- */
+/* Container */
 
 .container {
   display: grid;
-  grid-template-rows: 30vh 10vh 120vh 200vh 70vh 90vh 10vh;
+  grid-template-rows: 30vh 300vh 70vh 90vh 10vh;
 }
 
 .menu-section {
+  /* background-color: violet; */
   display: grid;
   grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 1100px) minmax(
       1rem,
@@ -51,6 +50,7 @@ html {
 
 .menu-section .heading {
   grid-area: heading;
+  /* background-color: tomato; */
   display: grid;
   grid-template-columns: 2fr 6fr 2fr;
   grid-template-areas: "title . search";
@@ -58,6 +58,7 @@ html {
 
 .menu-section .heading .title {
   grid-area: title;
+  /* background: yellow; */
   font-family: var(--link-font);
   font-size: 3rem;
   padding-right: 1.5rem;
@@ -108,26 +109,26 @@ html {
   font-size: 1.4rem;
   letter-spacing: 1.5px;
 }
+
 .menu-section .items .home {
   grid-area: home;
   cursor: pointer;
-  /* background-color: yellow; */
 }
+
 .menu-section .items .home:hover {
   color: rgb(136, 200, 188);
 }
+
 .menu-section .items .men {
   grid-area: men;
   cursor: pointer;
   /* background-color: rgb(228, 102, 19); */
+}
+.menu-section .items .men:hover {
   color: rgb(136, 200, 188);
 }
-.menu-section .items .women {
-  grid-area: women;
-  cursor: pointer;
-  /* background-color: yellow; */
-}
 .menu-section .items .women:hover {
+  cursor: pointer;
   color: rgb(136, 200, 188);
 }
 .menu-section .items .about {
@@ -139,8 +140,8 @@ html {
   color: rgb(136, 200, 188);
 }
 .menu-section .items .contact {
-  cursor: pointer;
   grid-area: contact;
+  cursor: pointer;
   /* background-color: yellow; */
 }
 .menu-section .items .contact:hover {
@@ -155,82 +156,6 @@ html {
   /* background-color: rgb(2, 255, 255); */
 }
 
-.annoucement {
-  background-color: rgb(136, 200, 188);
-  text-align: center;
-  color: white;
-  font-family: var(--link-font);
-  font-weight: 500;
-  font-size: 2.2rem;
-}
-
-.main-showcase {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(53, 41, 53);
-}
-
-.main-showcase .showcase {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: white;
-}
-
-.slider {
-  /* display: flex; */
-  background-image: url(./Images/shoeImages/shoe2.jpg);
-  transition: all 400ms ease-in-out;
-  /* transform: translateX(-737px); */
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%, cover;
-  background-repeat: no-repeat;
-}
-
-#prevBtn {
-  position: absolute;
-  top: 90%;
-  z-index: 10;
-  left: 20.5%;
-  font-size: 4rem;
-  color: #323332;
-  /* opacity: 0.7; */
-  cursor: pointer;
-}
-#nextBtn {
-  position: absolute;
-  top: 90%;
-  z-index: 10;
-  right: 20.5%;
-  font-size: 4rem;
-  color: #323332;
-  /* opacity: 0.7; */
-  cursor: pointer;
-}
-
-.main-showcase .showcase .slider .div1 {
-  opacity: 1;
-  /* display: none; */
-  /* background-color: red; */
-  transform: translateY(100px);
-  transition: all 600ms ease;
-}
-.main-showcase .showcase .slider .div2 {
-  opacity: 1;
-  background-color: red;
-  transform: translateY(100px);
-  transition: all 600ms ease;
-}
-.main-showcase .showcase .slider .div3 {
-  opacity: 1;
-  background-color: red;
-  transform: translateY(100px);
-  transition: all 600ms ease;
-}
 
 .fade-in {
   /* transform: translateY(100px); */
@@ -240,125 +165,9 @@ html {
   background-color: yellow;
 }
 
-/* ----------------------------------------- */
 
-.collections-product {
-  /* background-color: rgb(37, 143, 46); */
-  background-color: white;
-  display: grid;
-  grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 1100px) minmax(
-      1rem,
-      1fr
-    );
-  grid-template-rows: 50fr 50fr;
-  grid-template-areas:
-    ". top ."
-    ". product-image .";
-  grid-row-gap: 4rem;
-}
 
-.collections-product .top {
-  grid-area: top;
-  /* background-color: brown; */
-  /* font-family: var(--link-font);
-    font-weight: 600;
-    font-size: 38px;
-    text-align: center; */
-  display: grid;
-  grid-column-gap: 1.6rem;
-  grid-template-rows: 85fr 15fr;
-}
 
-.collections-product .top .image {
-  background-image: url(./Shoes/shoe3.jpg);
-  background-size: 100% 100%, cover;
-  background-repeat: no-repeat;
-}
-
-.collections-product .top .options {
-  background-color: yellow;
-  background-color: var(--button-color);
-}
-
-.collections-product .top .options a {
-  transition: all 500ms ease-in-out;
-}
-.collections-product .top .options a:visited {
-  color: white;
-}
-.collections-product .top .options a:hover {
-  color: black;
-}
-.collections-product .top .options a:link {
-  text-decoration: none;
-  margin-right: 3rem;
-  font-family: var(--link-font);
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: white;
-}
-
-.collections-product .product-image {
-  grid-area: product-image;
-  /* background-color: darkblue; */
-  display: grid;
-  grid-column-gap: 1.6rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-column-gap: 3rem;
-}
-.collections-product .product-image > div .image h1 {
-  font-family: var(--link-font);
-  font-size: 2.8rem;
-  font-weight: 600;
-  color: white;
-}
-.collections-product .product-image > div .image .product-img-btn {
-  height: 5rem;
-  width: 15rem;
-  background-color: var(--button-color);
-  font-family: var(--link-font);
-  color: white;
-  margin-top: 3rem;
-  cursor: pointer;
-  font-size: 1.4rem;
-  border-radius: 4rem;
-}
-.collections-product .product-image > div .image .product-img-btn:hover {
-  background-color: black;
-}
-.collections-product .product-image > div .image .product-img-btn {
-  transition: all 500ms ease-in-out;
-}
-.collections-product .product-image .image1 .image {
-  /* height: 80%;
-      width: 80%; */
-  background-image: url(./Shoes/shoe2.jpg);
-  background-size: 100% 100%, contain;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  border-radius: 1rem;
-  /* border: 1px solid var(--button-color); */
-}
-.collections-product .product-image .image2 .image {
-  /* height: 80%;
-      width: 80%; */
-  background-image: url(./Shoes/shoe9.webp);
-  background-size: 100% 100%, contain;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  border-radius: 1rem;
-  /* border: 1px solid var(--button-color); */
-}
-.collections-product .product-image .image3 .image {
-  /* height: 80%;
-  width: 80%; */
-  background-image: url(./Shoes/shoe10.webp);
-  background-size: 100% 100%, contain;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  border-radius: 1rem;
-  /* border: 1px solid var(--button-color); */
-}
 .best-sellers {
   margin-top: 10rem;
   /* background-color: rgb(129, 209, 24); */
@@ -368,11 +177,11 @@ html {
       1rem,
       1fr
     );
-  grid-template-rows: 10fr 80fr 10fr;
+  grid-template-rows: 10fr 90fr;
   grid-template-areas:
     ". heading ."
-    ". showcase ."
-    ". product-btn .";
+    ". showcase .";
+    margin-top: 2rem;
 }
 
 .best-sellers .heading {
@@ -397,8 +206,8 @@ html {
   border: 0.5px solid #dcdde1;
   display: grid;
   grid-template-rows: 65fr 35fr;
-  /* background-color: rgb(20, 97, 121); */
   border-radius: 1.5rem;
+  /* background-color: rgb(20, 97, 121); */
 }
 
 .best-sellers .showcase .item .image {
@@ -440,6 +249,22 @@ html {
 }
 .best-sellers .showcase .item8 .image {
   background-image: url(./Shoes/shoe8.webp);
+}
+
+.best-sellers .showcase .item9 .image {
+  background-image: url(./Shoes/shoe9.webp);
+}
+
+.best-sellers .showcase .item10 .image {
+  background-image: url(./Shoes/shoe10.webp);
+}
+
+.best-sellers .showcase .item11 .image {
+  background-image: url(./Shoes/shoe11.jpg);
+}
+
+.best-sellers .showcase .item12 .image {
+  background-image: url(./Shoes/shoe12.jpg);
 }
 
 .best-sellers .product-btn {
@@ -599,7 +424,7 @@ html {
   font-family: var(--heading-font);
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   /* grid-column-gap: 10px;
-      grid-row-gap: 50px; */
+          grid-row-gap: 50px; */
 }
 
 .footer .footer-wrapper .item {
@@ -723,7 +548,7 @@ html {
 @media only screen and (max-width: 888px) {
   .container {
     display: grid;
-    grid-template-rows: 30vh 10vh 140vh 200vh 90vh 90vh 10vh;
+    grid-template-rows: 30vh 200vh 90vh 90vh 10vh;
   }
 }
 
@@ -741,10 +566,10 @@ html {
 @media only screen and (max-width: 692px) {
   .menu-section .heading .search {
     /* height: 5.5rem;
-    width: 5.5rem;
-    border-radius: 60%;
-    position: relative;
-    right: 5.5rem; */
+        width: 5.5rem;
+        border-radius: 60%;
+        position: relative;
+        right: 5.5rem; */
     display: none;
   }
 
@@ -806,7 +631,56 @@ html {
 
   .container {
     display: grid;
-    grid-template-rows: 30vh 10vh 340vh 1000vh 90vh 90vh 10vh;
+    grid-template-rows: 30vh 1000vh 90vh 90vh 10vh;
+  }
+  .best-sellers .showcase {
+    margin-top: 8rem;
+    grid-area: showcase;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+  }
+  .best-sellers .showcase .item {
+    display: grid;
+    grid-template-rows: 65fr 35fr;
+  }
+  .best-sellers .showcase .item .description {
+    font-size: 2.5rem;
+  }
+  .collections-product {
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 1100px) minmax(
+        1rem,
+        1fr
+      );
+    grid-template-rows: 30fr 70fr;
+    grid-template-areas:
+      ". top ."
+      ". product-image .";
+    grid-row-gap: 4rem;
+  }
+  .collections-product .product-image {
+    grid-area: product-image;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+}
+@media only screen and (max-width: 397px) {
+  .footer .footer-wrapper .item5 {
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  /* .best-sellers .showcase .item .image {
+        background-size: 50% 50%, contain;
+        background-repeat: no-repeat;
+      } */
+  .container {
+    display: grid;
+    grid-template-rows: 30vh 1000vh 90vh 90vh 10vh;
   }
   .best-sellers .showcase {
     margin-top: 8rem;
@@ -828,46 +702,6 @@ html {
     grid-row-gap: 3rem;
   }
 
-  .best-sellers .showcase .item .description {
-    /* background-color: rgb(194, 48, 194); */
-    flex-direction: column;
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 397px) {
-  .footer .footer-wrapper .item5 {
-    padding-top: 2rem;
-  }
-}
-@media only screen and (max-width: 380px) {
-  /* .best-sellers .showcase .item .image {
-    background-size: 50% 50%, contain;
-    background-repeat: no-repeat;
-  } */
-  .container {
-    display: grid;
-    grid-template-rows: 30vh 10vh 240vh 1000vh 90vh 90vh 10vh;
-  }
-  .best-sellers .showcase {
-    margin-top: 8rem;
-    grid-area: showcase;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-column-gap: 3rem;
-    grid-row-gap: 2rem;
-  }
-  .best-sellers .showcase .item {
-    display: grid;
-    grid-template-rows: 65fr 35fr;
-  }
-  /* .collections-product .product-image {
-    grid-area: product-image;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-column-gap: 3rem;
-    grid-row-gap: 3rem;
-  } */
-
   .trusted-partners .brands {
     margin-top: 2rem;
     grid-area: brands;
@@ -886,7 +720,7 @@ html {
 @media only screen and (max-width: 366px) {
   .container {
     display: grid;
-    grid-template-rows: 30vh 10vh 340vh 1000vh 120vh 90vh 10vh;
+    grid-template-rows: 30vh 1000vh 120vh 90vh 10vh;
   }
   .trusted-partners .brands .brand {
     background-size: 50% 50%, contain;
@@ -908,7 +742,7 @@ html {
 @media only screen and (max-width: 334px) {
   .container {
     display: grid;
-    grid-template-rows: 30vh 10vh 340vh 1000vh 120vh 90vh 10vh;
+    grid-template-rows: 30vh 1000vh 120vh 90vh 10vh;
   }
   .trusted-partners .brands .brand {
     background-size: 50% 50%, contain;

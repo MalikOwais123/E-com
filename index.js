@@ -79,4 +79,29 @@ toTop.addEventListener("mouseout", () => {
 toTop.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
+
+
 // ********************************************************************************************
+
+
+var goToForm = document.querySelector(".go-to-form")
+var contactForm = document.querySelector(".contact-form")
+var closeIcon = document.querySelector(".contact-form .right .btn .btn-wrapper")
+console.log(closeIcon)
+closeIcon.addEventListener("click" ,()=> {
+  contactForm.style.opacity = "0"
+})
+console.log(contactForm)
+// console.log(goToForm);
+
+goToForm.addEventListener("click" ,()=> {
+  // console.log("clocjk")
+  contactForm.style.opacity = "1"
+})
+
+var whatsappBtn = document.querySelector(".right .discription .whatsapp")
+// console.log(whatsappBtn)
+
+whatsappBtn.addEventListener("click" , ()=> {
+  location.replace("https://wa.me/message/FNSMY5ERARQGF1")
+})
