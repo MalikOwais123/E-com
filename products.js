@@ -7,9 +7,9 @@ var aboutBtn = document.querySelector(".menu-section .items .about");
 homeBtn.addEventListener("click", () => {
   location.replace("./index.html");
 });
-// womenBtn.addEventListener("click", () => {
-//   location.replace("./index.html");
-// });
+womenBtn.addEventListener("click", () => {
+  location.replace("./women.html");
+});
 menBtn.addEventListener("click", () => {
   location.replace("./men.html");
 });
@@ -33,12 +33,12 @@ toTop.addEventListener("click", () => {
 });
 // ****************************************** GO-TO TOP END**************************************************
 
-var showAllProductBtn = document.querySelector(
-  ".best-sellers .product-btn .button-wrapper"
-);
-showAllProductBtn.addEventListener("click", () => {
-  location.replace("./products.html");
-});
+// var showAllProductBtn = document.querySelector(
+//   ".best-sellers .product-btn .button-wrapper"
+// );
+// showAllProductBtn.addEventListener("click", () => {
+//   location.replace("./products.html");
+// });
 
 // ************************************************************************************
 
@@ -64,14 +64,6 @@ var whatsappBtn = document.querySelector(".right .discription .whatsapp");
 
 whatsappBtn.addEventListener("click", () => {
   location.replace("https://wa.me/message/FNSMY5ERARQGF1");
-});
-
-var showAllProductBtn = document.querySelector(
-  ".best-sellers .product-btn .button-wrapper"
-);
-// console.log(showAllProductBtn)
-showAllProductBtn.addEventListener("click", () => {
-  location.replace("./products.html");
 });
 
 // console.log("after")

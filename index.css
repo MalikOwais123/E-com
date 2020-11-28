@@ -29,25 +29,27 @@ html {
 }
 
 
-/* ***************************** */
+/* ***************************************** */
 
 .contact-form {
   height: 50vh;
   width: 50vw;
-  /* background:  rgb(31, 189, 162); */
-  background: #f4faf8;
+  background:  #38c4f6;
+  background-image: linear-gradient(rgb(136, 200, 188),#f4faf8);
+  /* background: red; */
   display: grid;
   grid-template-columns: 40fr 60fr;
-  border: 2px solid #323332;
-  border-radius: 1rem;
+  /* border: 2px solid #323332; */
+  border-radius: 0.5rem;
   position: fixed;
-  top: 2vh;
+  display: none;
+  top: 25vh;
   left: 25vw;
+  z-index: 11;
   transition: all 600ms ease-in-out;
-  /* background-image: linear-gradient(to right,#f4faf8,rgb(197, 147, 8)); */
-  /* top: 10%; */
-  opacity: 0;
+
 }
+
 .right {
   /* background: green; */
   display: grid;
@@ -91,6 +93,7 @@ html {
 
 .left {
   /* background: yellow; */
+  background-color: #f4faf8;
   display: grid;
   grid-template-rows: 20fr 80fr;
   margin: 2rem;
@@ -107,10 +110,10 @@ html {
   letter-spacing: 3px;
 }
 .left .logo .image {
-  height: 40%;
-  width: 40%;
+  height: 60%;
+  width: 60%;
   /* background: red; */
-  background-image: url(./logo-1.jpeg);
+  background-image: url(./logo.jpeg);
   background-size: 100% 100%, cover;
   background-repeat: no-repeat;
   /* background: turquoise; */
@@ -238,6 +241,10 @@ html {
 .menu-section .items .contact {
   grid-area: contact;
   /* background-color: yellow; */
+}
+.menu-section .items .contact:hover {
+  color: rgb(136, 200, 188);
+  cursor: pointer;
 }
 .menu-section .items .space {
   /* grid-area: ; */
