@@ -18,7 +18,7 @@ contactBtn.addEventListener("click", () => {
   // location.replace("./index.html");
 });
 aboutBtn.addEventListener("click", () => {
-  location.replace("./index.html");
+  location.replace("./about.html");
 });
 
 // ****************************************** GO-TO TOP **************************************************

@@ -50,7 +50,7 @@ var div3 = document.querySelector(".div3");
                             <div class="slider-btn flex">SHOP COLLECTION</div>
                           </div>`;
     }
-  }, 5000);
+  }, 6000);
 })();
 // ********************************************************************************************
 

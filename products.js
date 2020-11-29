@@ -14,7 +14,7 @@ menBtn.addEventListener("click", () => {
   location.replace("./men.html");
 });
 aboutBtn.addEventListener("click", () => {
-  location.replace("./index.html");
+  location.replace("./about.html");
 });
 
 // ****************************************** GO-TO TOP **************************************************

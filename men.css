@@ -123,6 +123,86 @@ html {
 }
 
 
+/* ******************************   RESPONSIVENESS  ********************************* */
+
+@media only screen and (max-width: 1020px) {
+  .contact-form {
+    height: 40vh;
+    width: 60vw;
+    top: 25vh;
+    left: 20vw;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .right .discription {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .contact-form {
+    height: 40vh;
+    width: 70vw;
+    top: 25vh;
+    left: 15vw;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .contact-form {
+    height: 30vh;
+    width: 70vw;
+    top: 25vh;
+    left: 15vw;
+  }
+
+  .left {
+    height: 60%;
+    background-color: #f4faf8;
+    display: grid;
+    grid-template-rows: 20fr 80fr;
+    margin-bottom: 2rem;
+  }
+
+  .left .logo .image {
+    height: 40%;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form {
+    width: 100vw;
+    left: 0vw;
+  }
+  .left .title {
+    letter-spacing: 0px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .right .discription {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .left .title {
+    letter-spacing: 0px;
+    font-size: 1.2rem;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: 30fr 70fr;
+  }
+  .left {
+    margin: 1rem;
+  }
+}
+
+
+
+/* *********************************************************************** */
+
+
+
 /* ***************************** */
 
 
@@ -145,6 +225,8 @@ html {
   grid-template-areas:
     ". heading ."
     ". items . ";
+    background-color: #f7f7f7;
+    padding-bottom: 2rem;
 }
 
 .menu-section .heading {
@@ -161,6 +243,22 @@ html {
   padding-right: 1.5rem;
   font-weight: 600;
   color: #333;
+}
+
+.menu-section .heading .title .nav-bar-logo{
+  /* background-color: red; */
+  height:8rem;
+  width: 8rem;
+  padding-left: 2rem;
+  background-image: url(./nav-bar-logo.jpeg);
+  background-size: 100% 100%,cover;
+  background-repeat: no-repeat;
+  /* margin-right: 2rem; */
+}
+.menu-section .heading .title .name{
+
+  /* background-color: red; */
+  margin-left: 2rem;
 }
 
 .menu-section .heading .search {
