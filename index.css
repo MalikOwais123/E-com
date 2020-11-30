@@ -361,44 +361,25 @@ html {
   /* margin-top: 5rem; */
   background-color: rgb(53, 41, 53);
 }
-
 .main-showcase .showcase {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: white;
+  background-color: black;
 }
-
 .slider {
-  /* display: flex; */
-  /* background-image: url(./Images/shoeImages/shoe2.jpg); */
   transition: all 400ms ease;
-  /* transform: translateX(-737px); */
 }
-
 .slider .div1 {
   opacity: 0;
   position: relative;
   animation: mymove 1s ease-in-out 700ms 1 forwards;
 }
-
 @keyframes mymove {
   0% {
     top: 50px;
     opacity: 0;
   }
-  /* 25% {
-    top: 0%;
-    opacity: 1;
-  }
-  50% {
-    top: 0%;
-    opacity: 1;
-  }
-  75% {
-    top: 0%;
-    opacity: 1;
-  } */
   100% {
     top: 0%;
     opacity: 1;
@@ -414,16 +395,14 @@ html {
 
 .main-showcase .showcase .slider .div1 {
   opacity: 1;
-  /* display: none; */
-  /* background-color: red; */
-  /* transform: translateY(10rem); */
-  /* transition: all 500ms ease; */
   font-family: var(--heading-font);
   flex-direction: column;
   font-size: 3rem;
   color: white;
   font-weight: 200;
 }
+
+
 .main-showcase .showcase .slider .div1 h3 {
   letter-spacing: 0.3rem;
   font-weight: 300;
@@ -940,7 +919,16 @@ html {
   .container {
     display: grid;
     /* grid-template-rows: 30vh 10vh 240vh 1000vh 90vh 90vh 10vh; */
-    grid-template-rows: 30vh 10vh 100vh 240vh 1000vh 90vh 90vh 10vh;
+    grid-template-rows: 30vh 10vh 100vh 240vh 800vh 90vh 90vh 10vh;
+  }
+  .best-sellers {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 1100px) minmax(
+        1rem,
+        1fr
+      );
+    grid-template-rows: 5fr 90fr 5fr;
   }
   .best-sellers .showcase .item .description {
     font-size: 2.5rem;
@@ -959,7 +947,7 @@ html {
 @media only screen and (max-width: 380px) {
   .container {
     display: grid;
-    grid-template-rows: 30vh 10vh 100vh 240vh 1000vh 90vh 90vh 10vh;
+    grid-template-rows: 30vh 10vh 100vh 240vh 800vh 90vh 90vh 10vh;
   }
 
   .trusted-partners .brands {
@@ -1001,7 +989,7 @@ html {
   .container {
     display: grid;
     /* grid-template-rows: 30vh 10vh 340vh 1000vh 120vh 90vh 10vh; */
-    grid-template-rows: 30vh 10vh 100vh 340vh 1000vh 90vh 90vh 10vh;
+    grid-template-rows: 30vh 10vh 100vh 340vh 800vh 90vh 90vh 10vh;
   }
   .trusted-partners .brands .brand {
     background-size: 50% 50%, contain;
@@ -1024,7 +1012,7 @@ html {
   .container {
     display: grid;
     /* grid-template-rows: 30vh 10vh 340vh 1000vh 120vh 90vh 10vh; */
-    grid-template-rows: 30vh 10vh 100vh 340vh 1000vh 90vh 90vh 10vh;
+    grid-template-rows: 30vh 10vh 100vh 340vh 800vh 90vh 90vh 10vh;
   }
   .trusted-partners .brands .brand {
     background-size: 50% 50%, contain;

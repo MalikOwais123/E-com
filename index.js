@@ -12,6 +12,8 @@ var div2 = document.querySelector(".div2");
 var div3 = document.querySelector(".div3");
 
 // ********************************************************************************************
+
+
 (function () {
   // var slideShow = 0;
   setInterval(function () {
