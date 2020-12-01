@@ -210,6 +210,8 @@ html {
   grid-template-areas:
     ". heading ."
     ". items . ";
+    background-color: #f7f7f7;
+    padding-bottom: 1rem;
 }
 
 .menu-section .heading {
@@ -226,8 +228,23 @@ html {
   font-family: var(--link-font);
   font-size: 3rem;
   padding-right: 1.5rem;
+  margin-right: 1.5rem;
   font-weight: 600;
   color: #333;
+}
+.menu-section .heading .title .nav-bar-logo {
+  /* background-color: red; */
+  height: 8rem;
+  width: 8rem;
+  padding-left: 2rem;
+  background-image: url(./nav-bar-logo.jpeg);
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
+  /* margin-right: 2rem; */
+}
+.menu-section .heading .title .name {
+  /* background-color: red; */
+  margin-left: 2rem;
 }
 
 .menu-section .heading .search {
@@ -310,10 +327,6 @@ html {
 }
 .menu-section .items .contact:hover {
   color: rgb(136, 200, 188);
-}
-.menu-section .items .space {
-  /* grid-area: ; */
-  /* background-color: rgb(20, 20, 20); */
 }
 .menu-section .items .cart {
   grid-area: cart;
@@ -813,6 +826,19 @@ html {
   .container {
     display: grid;
     grid-template-rows: 30vh 1000vh 90vh 90vh 10vh;
+  }
+  .best-sellers {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 1100px) minmax(
+        1rem,
+        1fr
+      );
+    grid-template-rows: 4fr 96fr;
+    grid-template-areas:
+      ". heading ."
+      ". showcase .";
+    margin-top: 2rem;
   }
   .best-sellers .showcase {
     margin-top: 8rem;
