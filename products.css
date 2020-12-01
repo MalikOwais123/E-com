@@ -368,12 +368,19 @@ html {
   grid-template-rows: 65fr 35fr;
   border-radius: 1.5rem;
   /* background-color: rgb(20, 97, 121); */
+  transition: all 400ms ease-in-out;
+ 
+}
+.best-sellers .showcase .item:hover {
+  transform: scale(1.10);
+  cursor: pointer;
 }
 
 .best-sellers .showcase .item .image {
   /* background-image: url(./Images/project-2.jpg); */
   background-size: 100% 100%, cover;
   background-repeat: no-repeat;
+  background-position: center;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
 }
@@ -382,10 +389,10 @@ html {
   flex-direction: column;
 }
 
+
 .best-sellers .showcase .item1 .image {
   background-image: url(./Shoes/shoe1.jpg);
 }
-
 .best-sellers .showcase .item2 .image {
   background-image: url(./Shoes/shoe2.jpg);
 }
