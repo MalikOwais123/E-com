@@ -13,47 +13,44 @@ var div3 = document.querySelector(".div3");
 
 // ********************************************************************************************
 
-
 (function () {
   // var slideShow = 0;
   setInterval(function () {
     if (slideShow === imageHandler.length - 1) {
       // div3 show here
       slideShow = 0;
+      // slider.style.innerHTML = "";
       slider.style.backgroundImage = `url('${imageHandler[slideShow]}')`;
-      // slider.innerHTML = `<div>hhhhhh</div>`
-      slider.innerHTML = `<div class="div1 flex">
-                            <h1>MEN'S</h1>
-                            <h3>SHOES</h3>
-                            <h2>COLLECTION</h2>
-                            <h4>New trending shoes</h4>
-                            <div class="slider-btn flex">SHOP COLLECTION</div>
-                          </div>`;
+      slider.innerHTML = `<h1><span class = "first">MEN'S</span><h1/>
+                          <h1><span class = "second">SHOES</span></h1>
+                          <h1><span class = "third">COLLECTION</span></h1>
+                          <h1><span class = "forth">New trending shoes</span></h1>
+                          <h1><span class="slider-btn">SHOP COLLECTIONS</span></h1>  `;
     } else if (slideShow === 0) {
       slideShow++;
+      // slider.style.innerHTML = "";
       slider.style.backgroundImage = `url('${imageHandler[slideShow]}')`;
-      slider.innerHTML = `<div class="div1 flex">
-                            <h1>SPORT</h1>
-                            <h3>SHOES</h3>
-                            <h2>COLLECTION</h2>
-                            <h4>New trending shoes</h4>
-                            <div class="slider-btn flex">SHOP COLLECTION</div>
-                          </div>`;
+      slider.innerHTML = `<h1><span class = "first">SPORT'S</span><h1/>
+                          <h1><span class = "second">ARRIVAL</span></h1>
+                          <h1><span class = "third">GET YOUR'S NOW</span></h1>
+                          <h1><span class = "forth">Up-to 50% OFF</span></h1>
+                          <h1><span class="slider-btn">SHOP COLLECTIONS</span></h1>  `;
+
       // div1 show here
     } else if (slideShow === 1) {
       // div2 show here
       slideShow++;
+      // slider.style.innerHTML = "";
       slider.style.backgroundImage = `url('${imageHandler[slideShow]}')`;
-      slider.innerHTML = `<div class="div1 flex">
-                            <h1>MEN'S</h1>
-                            <h3>SHOES</h3>
-                            <h2>COLLECTION</h2>
-                            <h4>New trending shoes</h4>
-                            <div class="slider-btn flex">SHOP COLLECTION</div>
-                          </div>`;
+      slider.innerHTML = `<h1><span class = "first">WOMEN'S</span><h1/>
+                          <h1><span class = "second">SPORT'S</span></h1>
+                          <h1><span class = "third">COLLECTION</span></h1>
+                          <h1><span class = "forth">New Stylesh shoes</span></h1>
+                          <h1><span class="slider-btn">SHOP COLLECTIONS</span></h1>  `;
     }
   }, 6000);
 })();
+
 // ********************************************************************************************
 
 // ********************************************************************************************
@@ -82,42 +79,44 @@ toTop.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-
 // ********************************************************************************************
 
-
-var goToForm = document.querySelector(".go-to-form")
-var contactForm = document.querySelector(".contact-form")
-var closeIcon = document.querySelector(".contact-form .right .btn .btn-wrapper")
-console.log(closeIcon)
-closeIcon.addEventListener("click" ,()=> {
-  contactForm.style.display = "none"
-})
-console.log(contactForm)
+var goToForm = document.querySelector(".go-to-form");
+var contactForm = document.querySelector(".contact-form");
+var closeIcon = document.querySelector(
+  ".contact-form .right .btn .btn-wrapper"
+);
+console.log(closeIcon);
+closeIcon.addEventListener("click", () => {
+  contactForm.style.display = "none";
+});
+console.log(contactForm);
 // console.log(goToForm);
 
-goToForm.addEventListener("click" ,()=> {
+goToForm.addEventListener("click", () => {
   // console.log("clocjk")
-  contactForm.style.display = "grid"
-})
+  contactForm.style.display = "grid";
+});
 
-var whatsappBtn = document.querySelector(".right .discription .whatsapp")
+var whatsappBtn = document.querySelector(".right .discription .whatsapp");
 // console.log(whatsappBtn)
 
-whatsappBtn.addEventListener("click" , ()=> {
-  location.replace("https://wa.me/message/FNSMY5ERARQGF1")
-})
+whatsappBtn.addEventListener("click", () => {
+  location.replace("https://wa.me/message/FNSMY5ERARQGF1");
+});
 
-var showAllProductBtn = document.querySelector(".best-sellers .product-btn .button-wrapper")
+var showAllProductBtn = document.querySelector(
+  ".best-sellers .product-btn .button-wrapper"
+);
 // console.log(showAllProductBtn)
-showAllProductBtn.addEventListener("click" ,()=> {
-  location.replace("./products.html")
-})
+showAllProductBtn.addEventListener("click", () => {
+  location.replace("./products.html");
+});
 
 // console.log("after")
 
-var navbarContactBtn = document.querySelector(".menu-section .items .contact")
+var navbarContactBtn = document.querySelector(".menu-section .items .contact");
 // console.log(navbarContactBtn)
-navbarContactBtn.addEventListener("click" ,()=> {
-  contactForm.style.display = "grid"
-})
+navbarContactBtn.addEventListener("click", () => {
+  contactForm.style.display = "grid";
+});
